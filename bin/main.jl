@@ -4,6 +4,7 @@
 ENV["HOST"] = "0.0.0.0"
 
 push!(LOAD_PATH, abspath(normpath(joinpath(@__DIR__, "../src/"))))
+push!(LOAD_PATH, abspath(normpath(joinpath(@__DIR__, ".."))))
 @info "LOAD_PATH: " LOAD_PATH
 
 ENV["STARTSERVER"] = true
