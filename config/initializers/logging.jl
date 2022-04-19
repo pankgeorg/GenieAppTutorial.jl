@@ -24,4 +24,4 @@ function initialize_logging()
   nothing
 end
 
-initialize_logging()
+# initialize_logging()
