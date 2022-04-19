@@ -2,4 +2,5 @@
 
 using GenieAppTutorial
 push!(Base.modules_warned_for, Base.PkgId(GenieAppTutorial))
+@info("Will invoke GenieAppTutorial.main")
 GenieAppTutorial.main()
