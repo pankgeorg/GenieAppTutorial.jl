@@ -11,6 +11,8 @@ ENV["EARLYBIND"] = true
 
 @info "haskey EARLYBIND" haskey(ENV, "EARLYBIND")
 @info "EARLYBIND" ENV["EARLYBIND"]
-cd(@__DIR__)
-run(`cd .. && HOST=0.0.0.0 PORT=8000 julia --project bootstrap.jl`)
+a = abspath(realpath(joinpath(@__DIR__, "..")))
+@info a 
+cd(a)
+run(`julia --project=. bootstrap.jl`)
 # include("../bootstrap.jl")
