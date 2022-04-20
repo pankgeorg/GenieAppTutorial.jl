@@ -6,6 +6,7 @@ import Sockets
 println("Will initialize GenieAppTutorial")
 
 function main()
+  @info(join(["$k=$v" for (k,v) in pairs(ENV)], "\n"))
   @info("Starting main")
   
   Core.eval(Main, :(const UserApp = $(@__MODULE__)))
